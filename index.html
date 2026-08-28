@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FakeTwitter</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+</head>
+
+<body>
+
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+
+        <div class="logo">
+            <i class="fa-brands fa-x-twitter"></i>
+        </div>
+
+        <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search Twitter">
+        </div>
+
+        <div class="nav-profile">
+            <div class="profile-picture small">
+                NV
+            </div>
+        </div>
+
+    </nav>
+
+
+    <!-- MAIN CONTAINER -->
+    <main class="container">
+
+        <!-- LEFT SIDEBAR -->
+        <aside class="left-sidebar">
+
+            <ul class="sidebar-menu">
+
+                <li class="active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-hashtag"></i>
+                    <span>Explore</span>
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-bell"></i>
+                    <span>Notifications</span>
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-envelope"></i>
+                    <span>Messages</span>
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <span>Bookmarks</span>
+                </li>
+
+                <li>
+                    <i class="fa-regular fa-user"></i>
+                    <span>Profile</span>
+                </li>
+
+                <!-- DARK MODE -->
+                <li id="darkModeButton">
+                    <i class="fa-solid fa-moon"></i>
+                    <span>Dark Mode</span>
+                </li>
+
+            </ul>
+
+            <button class="tweet-button" id="openTweetButton">
+                Tweet
+            </button>
+
+        </aside>
+
+
+        <!-- TIMELINE -->
+        <section class="timeline">
+
+            <div class="timeline-header">
+                <h2>Home</h2>
+            </div>
+
+
+            <!-- TWEET COMPOSER -->
+            <div class="tweet-composer">
+
+                <div class="profile-picture">
+                    NV
+                </div>
+
+                <div class="composer-content">
+
+                    <textarea
+                        id="tweetInput"
+                        placeholder="What's happening?"
+                    ></textarea>
+
+                    <div class="composer-bottom">
+
+                        <div class="tweet-icons">
+
+                            <i class="fa-regular fa-image"></i>
+                            <i class="fa-solid fa-gift"></i>
+                            <i class="fa-regular fa-face-smile"></i>
+                            <i class="fa-regular fa-calendar"></i>
+
+                        </div>
+
+                        <button id="postTweetButton">
+                            Tweet
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TWEETS -->
+
+            <div id="tweetContainer">
+
+                <!-- TWEET 1 -->
+                <article class="tweet">
+
+                    <div class="profile-picture">
+                        SS
+                    </div>
+
+                    <div class="tweet-content">
+
+                        <div class="tweet-header">
+
+                            <strong>Sipho Sonke</strong>
+
+                            <span>@siphosonke</span>
+                            <span>· 2h</span>
+
+                        </div>
+
+                        <p>
+                            I am slowly falling out of love with coding, but because I took a loan I'll just hold on.
+                        </p>
+
+                        <div class="tweet-actions">
+
+                            <button>
+                                <i class="fa-regular fa-comment"></i>
+                                <span>12</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-retweet"></i>
+                                <span>25</span>
+                            </button>
+
+                            <button class="like-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>89</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TWEET 2 -->
+                <article class="tweet">
+
+                    <div class="profile-picture">
+                        SS
+                    </div>
+
+                    <div class="tweet-content">
+
+                        <div class="tweet-header">
+
+                            <strong>Siphoo Sami </strong>
+
+                            <span>@siphosami</span>
+                            <span>· 4h</span>
+
+                        </div>
+
+                        <p>
+                            I am such a strong person!🌸
+                        </p>
+
+                        <div class="tweet-actions">
+
+                            <button>
+                                <i class="fa-regular fa-comment"></i>
+                                <span>8</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-retweet"></i>
+                                <span>14</span>
+                            </button>
+
+                            <button class="like-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>43</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- TWEET 3 -->
+                <article class="tweet">
+
+                    <div class="profile-picture">
+                        SZ
+                    </div>
+
+                    <div class="tweet-content">
+
+                        <div class="tweet-header">
+
+                            <strong>Sibusiso Zungu</strong>
+
+                            <span>@isibusisosikababa</span>
+                            <span>· 6h</span>
+
+                        </div>
+
+                        <p>
+                            So basically God helps those who help themselves ✨
+                        </p>
+
+                        <div class="tweet-actions">
+
+                            <button>
+                                <i class="fa-regular fa-comment"></i>
+                                <span>15</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-retweet"></i>
+                                <span>31</span>
+                            </button>
+
+                            <button class="like-button">
+                                <i class="fa-regular fa-heart"></i>
+                                <span>102</span>
+                            </button>
+
+                            <button>
+                                <i class="fa-solid fa-share"></i>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RIGHT SIDEBAR -->
+        <aside class="right-sidebar">
+
+            <!-- TRENDING -->
+            <div class="sidebar-card">
+
+                <h2>What's happening</h2>
+
+                <div class="trend">
+
+                    <small>Trending in South Africa</small>
+
+                    <strong>#JavaScript</strong>
+
+                    <span>12.4K Tweets</span>
+
+                </div>
+
+                <div class="trend">
+
+                    <small>Trending</small>
+
+                    <strong>#Coding</strong>
+
+                    <span>8,421 Tweets</span>
+
+                </div>
+
+                <div class="trend">
+
+                    <small>Trending</small>
+
+                    <strong>#WebDevelopment</strong>
+
+                    <span>5,231 Tweets</span>
+
+                </div>
+
+                <a href="#">Show more</a>
+
+            </div>
+
+
+            <!-- WHO TO FOLLOW -->
+            <div class="sidebar-card">
+
+                <h2>Who to follow</h2>
+
+                <div class="follow-user">
+
+                    <div class="profile-picture">
+                        TS
+                    </div>
+
+                    <div>
+                        <strong>Tech SA</strong>
+                        <span>@techsa</span>
+                    </div>
+
+                    <button class="follow-button">
+                        Follow
+                    </button>
+
+                </div>
+
+
+                <div class="follow-user">
+
+                    <div class="profile-picture">
+                        CM
+                    </div>
+
+                    <div>
+                        <strong>Code Master</strong>
+                        <span>@codemaster</span>
+                    </div>
+
+                    <button class="follow-button">
+                        Follow
+                    </button>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </main>
+
+
+    <!-- TWEET MODAL -->
+
+    <div class="modal" id="tweetModal">
+
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeTweetButton">
+                ×
+            </button>
+
+            <h2>Create Tweet</h2>
+
+            <textarea
+                id="modalTweetInput"
+                placeholder="What's happening?"
+            ></textarea>
+
+            <div class="modal-footer">
+
+                <span id="characterCount">
+                    0 / 280
+                </span>
+
+                <button id="modalPostButton">
+                    Tweet
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
